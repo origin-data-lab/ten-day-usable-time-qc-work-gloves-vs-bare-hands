@@ -1,0 +1,47 @@
+{
+  "note": 27,
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "37.9% of 74,044 seconds usable for manipulation over 10 working days",
+      "status": "Verified (automated)",
+      "evidence": [
+        "assets/tables/qc_per_second_10days.csv",
+        "assets/tables/qc_by_day.csv",
+        "analysis/fn27_qc.py"
+      ]
+    },
+    {
+      "id": "C2",
+      "claim": "usable 23.7% on glove days vs 51.9% on bare-hand days; every glove day 18–28%, every bare day 49–56%",
+      "status": "Verified (automated)",
+      "evidence": [
+        "assets/tables/qc_gloves_vs_bare.csv",
+        "assets/tables/qc_by_day.csv"
+      ]
+    },
+    {
+      "id": "C3",
+      "claim": "by eye: hand visible 22/30 (gloves) vs 25/30 (bare); detector found 11/22 vs 22/25",
+      "status": "Reviewed (small sample)",
+      "evidence": [
+        "assets/tables/manual_review_60_seconds.csv",
+        "assets/tables/manual_review_summary.csv"
+      ]
+    }
+  ],
+  "inputs": {
+    "environment": {
+      "python": "3.10.12",
+      "opencv": "5.0.0",
+      "mediapipe": "0.10.14 (Hands, solutions API)",
+      "numpy": "2.2.6",
+      "pandas": "2.x",
+      "matplotlib": "3.10.9",
+      "ffmpeg": "4.4.2",
+      "os": "Linux x86_64 (CPU only)",
+      "analysis_date": "2026-11-14"
+    },
+    "recording": "All left-eye recordings 2026-11-01..05 and 11-08..12 (271 files, 20.6 h); R8 stereo+IMU unit CCC4B2D9B5EA, same unit as Field Notes #15–#26"
+  }
+}

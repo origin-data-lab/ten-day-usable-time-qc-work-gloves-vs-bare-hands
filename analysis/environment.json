@@ -1,0 +1,11 @@
+{
+  "python": "3.10.12",
+  "opencv": "5.0.0",
+  "mediapipe": "0.10.14 (Hands, solutions API)",
+  "numpy": "2.2.6",
+  "pandas": "2.x",
+  "matplotlib": "3.10.9",
+  "ffmpeg": "4.4.2",
+  "os": "Linux x86_64 (CPU only)",
+  "analysis_date": "2026-11-14"
+}
